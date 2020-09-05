@@ -2,7 +2,7 @@ _cache
 _site
 result
 site
-site.hi
-site.o
-Main.hi
-Main.o
+*.dyn_hi
+*.dyn_o
+*.hi
+*.o
