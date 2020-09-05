@@ -38,4 +38,4 @@ seal-blog/
 
 ## These seals need more adjectives!
 
-In `generate/generateSealPosts.hs` you'll find two lists of adjectives. Submit a pull request to add more. Or email me at admin AT cutesealfanpage.love
+In [generate/generateSealPosts.hs](https://gitlab.com/billewanick/seal-blog/-/blob/master/generate/generateSealPosts.hs#L117-221) you'll find two lists of adjectives. Submit a pull request to add more. Or email me at admin AT cutesealfanpage.love
