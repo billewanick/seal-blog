@@ -6,3 +6,4 @@ site
 *.dyn_o
 *.hi
 *.o
+generateSealPosts
