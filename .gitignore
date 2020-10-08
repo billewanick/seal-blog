@@ -1,6 +1,9 @@
+# Haykll site
 _cache
 _site
 result
+
+# Haskell stuff
 site
 *.dyn_hi
 *.dyn_o
@@ -8,5 +11,5 @@ site
 *.o
 generateSealPosts
 
+# Direnv lorri stuff
 .direnv
-.envrc
