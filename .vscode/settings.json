@@ -1,3 +1,4 @@
 {
-    "nixEnvSelector.nixShellConfig": "NOT_MODIFIED_ENV"
+    "nixEnvSelector.nixShellConfig": "NOT_MODIFIED_ENV",
+    "git.ignoreLimitWarning": true
 }
