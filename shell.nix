@@ -17,7 +17,7 @@ let
   ghc = pkgs.haskellPackages.ghcWithHoogle (self: with self; [
  #       hspec
         split
-        myPkg # hakyll
+ #       myPkg # hakyll
         random
         neat-interpolation
       ]);
@@ -30,7 +30,7 @@ pkgs.mkShell {
 
 #      stack
 #      ghcjs-dom
-      cabal-install
+#      cabal-install
     ]) ++ (with pkgs; [
       nano
     ]);
