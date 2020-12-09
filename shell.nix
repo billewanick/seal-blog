@@ -15,7 +15,7 @@ let
   myPkg = pkgs.haskellPackages.hakyll;
 
   ghc = pkgs.haskellPackages.ghcWithHoogle (self: with self; [
-        hspec
+ #       hspec
         split
         myPkg # hakyll
         random
@@ -28,8 +28,8 @@ pkgs.mkShell {
       ghc
       hlint
 
-      stack
-      ghcjs-dom
+#      stack
+#      ghcjs-dom
       cabal-install
     ]) ++ (with pkgs; [
       nano
