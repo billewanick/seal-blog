@@ -1,4 +1,17 @@
 {
-    "nixEnvSelector.nixShellConfig": "NOT_MODIFIED_ENV",
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "cSpell.words": [
+        "cutesealfanpage",
+        "Fanpage",
+        "fmap",
+        "Hakyll",
+        "Lookie",
+        "mappend",
+        "Monoid",
+        "NOINLINE",
+        "pandoc",
+        "uncurry",
+        "unlines",
+        "utct"
+    ]
 }
