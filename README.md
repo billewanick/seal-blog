@@ -33,3 +33,23 @@ seal-blog/
 ## These seals need more adjectives
 
 In [generate/generateSealPosts.hs](https://gitlab.com/billewanick/seal-blog/-/blob/master/generate/generateSealPosts.hs#L117-221) you'll find two lists of adjectives. Submit a pull request to add more. Or email me at admin AT cutesealfanpage.love
+
+
+
+
+
+
+## Work to be done
+
+- The blog post generation and the hosting of the website are currently intertwined when they should be separated
+  - Seal post generator just makes posts
+  - Hakyll blog imports or calls the post generator
+  - The deployed server/nix config file has a cron job for adding a new blog and committing every day
+- Need to move the blog and post generation inside nixos-apps on my beefier server
+  - The configuration file here is for it's own Linode, the current small one running, but I have a better setup for that now
+  - Pull out the useful parts for my deployed server, remove anything not necessary for a small config file
+  - Also switch to using caddy if not already
+- Experiment with `*` A records
+  - For the seal blog
+  - Instead of having `www` and `git` and `...` subdomains spelled out in Namecheap
+  - Just have a `*` record and have caddy do the filtering 
