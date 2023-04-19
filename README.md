@@ -20,24 +20,8 @@ seal-blog/
   - newSealPost.sh
     - Script to be called daily by a cron job on the server. Generates the post for the day, builds and commits.
 
-- dist/
-  - Place for the Haskell build artifacts to go.
-
-- generate/
-  - generateSealPosts.hs
-    - A Haskell script that checks the website/posts folder and creates a blog post for every day from 1998 until the current date. There you will find the adjective lists if you think of more words to describe seals.
-
 - website/
   - A basic Hakyll site, slightly modified to serve seals. Most of the site is generated from the `site.hs` file. Check the [Hakyll](https://jaspervdj.be/hakyll/) documentation for more info.
-
-## These seals need more adjectives
-
-In [generate/generateSealPosts.hs](https://gitlab.com/billewanick/seal-blog/-/blob/master/generate/generateSealPosts.hs#L117-221) you'll find two lists of adjectives. Submit a pull request to add more. Or email me at admin AT cutesealfanpage.love
-
-
-
-
-
 
 ## Work to be done
 
@@ -52,4 +36,4 @@ In [generate/generateSealPosts.hs](https://gitlab.com/billewanick/seal-blog/-/bl
 - Experiment with `*` A records
   - For the seal blog
   - Instead of having `www` and `git` and `...` subdomains spelled out in Namecheap
-  - Just have a `*` record and have caddy do the filtering 
+  - Just have a `*` record and have caddy do the filtering

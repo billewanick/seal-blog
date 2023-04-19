@@ -12,9 +12,9 @@
         pkgs = nixpkgs.legacyPackages.${system};
 
         ghc' = pkgs.haskellPackages.ghcWithHoogle (self: with self; [
+          dhall
           hakyll
           neat-interpolation
-          parallel
           random
           split
         ]);
@@ -27,6 +27,7 @@
             [
               ghc'
               hlint
+              haskell-language-server
             ];
         };
       });
