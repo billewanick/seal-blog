@@ -5,11 +5,11 @@ result
 
 # Haskell stuff
 site
+dist
 *.dyn_hi
 *.dyn_o
 *.hi
 *.o
-generateSealPosts
 
 # Direnv lorri stuff
 .direnv
