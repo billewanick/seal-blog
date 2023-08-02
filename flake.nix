@@ -28,6 +28,10 @@
               ghc'
               hlint
               haskell-language-server
+
+              (pkgs.writeShellScriptBin "build-site" ''
+                ${ghc'}/bin/ghc --make website/site -outputdir dist -static -O2
+              '')
             ];
         };
       });
