@@ -19,7 +19,31 @@
     "root": {
       "inputs": {
         "nixpkgs": "nixpkgs",
+        "spg": "spg",
         "utils": "utils"
+      }
+    },
+    "spg": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "utils": [
+          "utils"
+        ]
+      },
+      "locked": {
+        "lastModified": 1691015524,
+        "narHash": "sha256-Qg6wYm/T3qmEiwuff3hBmOnCe8MoC6LhHuKQDs+7YRE=",
+        "ref": "refs/heads/main",
+        "rev": "73235cf0ab75d9823db99210ba8bdaf426e29714",
+        "revCount": 10,
+        "type": "git",
+        "url": "https://git.ewanick.com/bill/sealPostGenerator.git"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://git.ewanick.com/bill/sealPostGenerator.git"
       }
     },
     "systems": {
