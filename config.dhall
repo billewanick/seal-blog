@@ -1,6 +1,7 @@
-{ sealImagesPath = "./website/images"
-, postsOutputPath = "./website/posts"
-, startDate = 2022-01-01
+{ sealImagesPath = "images"
+, postsOutputPath = "posts"
+, startDate = 2022-09-11
+, seed = +137
 , adjectives1 =
   [ "absorbing"
   , "adorable"

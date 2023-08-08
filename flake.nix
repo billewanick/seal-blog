@@ -24,10 +24,30 @@
           split
         ]);
       in
-      {
+      rec {
         apps.generateSealPosts = {
           type = "app";
           program = "${inputs.spg.packages.${system}.default}/bin/generateSealPosts";
+        };
+
+        apps.hakyll-site = {
+          type = "app";
+          program = "${packages.default}/bin/site";
+        };
+
+        apps.default = apps.hakyll-site;
+
+        packages.default = pkgs.stdenv.mkDerivation {
+          name = "site";
+          src = self;
+          buildPhase = ''
+            ${ghc'}/bin/ghc \
+              -O2           \
+              -static       \
+              -o site       \
+              site.hs
+          '';
+          installPhase = "mkdir -p $out/bin; install -t $out/bin site";
         };
 
         devShells.default = pkgs.mkShell {
@@ -37,10 +57,6 @@
             ghc'
             hlint
             haskell-language-server
-
-            (pkgs.writeShellScriptBin "build-site" ''
-              ${ghc'}/bin/ghc --make website/site -outputdir dist -static -O2
-            '')
           ];
         };
       });

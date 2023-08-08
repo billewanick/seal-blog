@@ -2,11 +2,11 @@
   "nodes": {
     "nixpkgs": {
       "locked": {
-        "lastModified": 1690927903,
-        "narHash": "sha256-D5gCaCROnjEKDOel//8TO/pOP87pAEtT0uT8X+0Bj/U=",
+        "lastModified": 1691421349,
+        "narHash": "sha256-RRJyX0CUrs4uW4gMhd/X4rcDG8PTgaaCQM5rXEJOx6g=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "bd836ac5e5a7358dea73cb74a013ca32864ccb86",
+        "rev": "011567f35433879aae5024fc6ec53f2a0568a6c4",
         "type": "github"
       },
       "original": {
@@ -33,11 +33,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1691015524,
-        "narHash": "sha256-Qg6wYm/T3qmEiwuff3hBmOnCe8MoC6LhHuKQDs+7YRE=",
+        "lastModified": 1691530010,
+        "narHash": "sha256-4xtMxEstoQ0iM/BOgGhla08xL/DFjS0+Q8nLOl9Gmls=",
         "ref": "refs/heads/main",
-        "rev": "73235cf0ab75d9823db99210ba8bdaf426e29714",
-        "revCount": 10,
+        "rev": "f25dd9c99382fd4e945e4d0d034254fc552d9aca",
+        "revCount": 14,
         "type": "git",
         "url": "https://git.ewanick.com/bill/sealPostGenerator.git"
       },
