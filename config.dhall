@@ -1,6 +1,6 @@
 { sealImagesPath = "images"
 , postsOutputPath = "posts"
-, startDate = 2020-04-20
+, startDate = 2022-04-20
 , seed = +137
 , adjectives1 =
   [ "absorbing"
