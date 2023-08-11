@@ -17,11 +17,7 @@
         pkgs = nixpkgs.legacyPackages.${system};
 
         ghc' = pkgs.haskellPackages.ghcWithHoogle (self: with self; [
-          dhall
           hakyll
-          neat-interpolation
-          random
-          split
         ]);
       in
       rec {
