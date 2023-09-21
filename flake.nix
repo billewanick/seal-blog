@@ -35,7 +35,7 @@
 
         packages.default = pkgs.stdenv.mkDerivation {
           name = "site";
-          src = self;
+          src = ./.; # using self here caused a bunch of problems!
           buildPhase = ''
             ${ghc'}/bin/ghc \
               -O2           \
