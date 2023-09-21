@@ -2,6 +2,7 @@
 _cache
 _site
 result
+posts
 
 # Haskell stuff
 site
